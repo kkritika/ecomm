@@ -1,0 +1,71 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "angular-underscore",
+        "scope": null,
+        "escapedName": "angular-underscore",
+        "name": "angular-underscore",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "/var/sites/thoughtnext/Web/SS Bot"
+    ]
+  ],
+  "_from": "angular-underscore@latest",
+  "_id": "angular-underscore@0.0.3",
+  "_inCache": true,
+  "_location": "/angular-underscore",
+  "_nodeVersion": "0.10.15",
+  "_npmUser": {
+    "name": "seefeld",
+    "email": "piotr.seefeld@gmail.com"
+  },
+  "_npmVersion": "2.7.6",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "angular-underscore",
+    "scope": null,
+    "escapedName": "angular-underscore",
+    "name": "angular-underscore",
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/angular-underscore/-/angular-underscore-0.0.3.tgz",
+  "_shasum": "f703e6e39d5174416c5f9cd2cf279ef8af94dab4",
+  "_shrinkwrap": null,
+  "_spec": "angular-underscore",
+  "_where": "/var/sites/thoughtnext/Web/SS Bot",
+  "author": {
+    "name": "Piotr Seefeld"
+  },
+  "dependencies": {},
+  "description": "AngularJS Underscore",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "shasum": "f703e6e39d5174416c5f9cd2cf279ef8af94dab4",
+    "tarball": "https://registry.npmjs.org/angular-underscore/-/angular-underscore-0.0.3.tgz"
+  },
+  "license": "BSD",
+  "main": "index.js",
+  "maintainers": [
+    {
+      "name": "seefeld",
+      "email": "piotr.seefeld@gmail.com"
+    }
+  ],
+  "name": "angular-underscore",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "0.0.3"
+}

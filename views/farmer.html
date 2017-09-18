@@ -1,0 +1,20 @@
+<div ng-include="'../views/partials/top-nav.html'"></div>
+
+<div class="container">
+
+  <div class="row text-center" style="padding-top: 40px; ">
+    <div class="col-md-3 mb-4" ng-repeat="product in products" style="padding-top: 40px; ">
+      <div class="card" style="padding: 15px;">
+        <img class="card-img-top" src="http://placehold.it/180x140" alt="" ng-click="showProductDetails(product)">
+        <div class="card-body">
+          <h4 class="card-title"><a ng-click="showProductDetails(product)">{{product.name}} </a> </h4>
+          <p class="card-text">{{product.selectedSeller.price}}</p>
+          <p class="card-text">{{product.selectedSeller.name}}</p>
+        </div>
+        <div class="card-footer">
+          <button class="btn btn-primary" ng-click="addToCart(product)">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

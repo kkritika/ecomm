@@ -1,0 +1,25 @@
+<div ng-include="'../views/partials/side-nav.html'"></div>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-1"></div>
+    <div class="col-lg-10">
+      <h2>Products</h2>
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr ng-repeat="product in products">
+            <td>{{product.name}}</td>
+            <td>{{product.description}}</td>
+            <td>{{product.sellers[0].price}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

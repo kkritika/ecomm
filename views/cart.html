@@ -1,0 +1,55 @@
+<div ng-include="'../views/partials/top-nav.html'"></div>
+<div class="container" >
+  <div class="row" style="margin-top: 40px">
+    <h2>My Cart</h2>
+  </div>
+  <div class="row" ng-if="products.length>0">
+    <table class="table table-hover table-condensed" ng-if="products.length>0" ng-init="Total = 0">
+      <thead>
+        <tr>
+          <th style="width:40%">Product</th>
+          <th style="width:10%">Price</th>
+          <th style="width:10%">Seller Name</th>
+          <th style="width:8%">Quantity</th>
+          <th style="width:22%" >Subtotal</th>
+          <th style="width:20%"></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr ng-repeat="product in products">
+          <td>
+            {{product.name}}
+          </td>
+          <td>
+            {{product.selectedSeller.price}}
+          </td>
+          <td>
+            {{product.selectedSeller.name}}
+          </td>
+          <td>
+            {{product.quantity}}
+          </td>
+          <td ng-init="itemTotal = product.quantity*product.selectedSeller.price; $parent.Total = $parent.Total + product.quantity*product.selectedSeller.price">
+            {{itemTotal}}
+            
+          </td>          
+          <td>
+            <button ng-click="removeItemsFromCart(product)">Delete</button>
+          </td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td><a ui-sref="farmer" class="btn btn-warning"><i class="fa fa-angle-left"></i> Continue Shopping</a></td>
+          <td colspan="2" class="hidden-xs"></td>
+          <td></td>
+          <td ><strong>Total ${{Total}}</strong></td>
+          <td><a class="btn btn-success btn-block">Checkout <i class="fa fa-angle-right"></i></a></td>
+        </tr>
+      </tfoot>
+    </table>
+    <div class="row" ng-if="products.length==0">
+      <p class="text-center"> No items in your cart </p>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,33 @@
+<div ng-include="'../views/partials/top-nav.html'"></div>
+
+<div class="container">
+  <div class="row" style="padding-top: 80px">
+    <div class="col-lg-3">
+    </div>
+    <!-- /.col-lg-3 -->
+    <div class="col-lg-6">
+      <div class="card mt-4">
+        <img class="card-img-top img-fluid" src="http://placehold.it/500x250" alt="">
+        <div class="card-body">
+          <h3 class="card-title">{{product.name}}</h3>
+          <h4>{{product.selectedSeller.price}}</h4>
+          <p class="card-text">{{product.description}}</p>
+        </div>
+      </div>
+      <div class="card-footer">
+        <div class="row">
+          <div class="col-lg-5">
+            <select class="form-control" id="sel1" ng-model="product.selectedSeller" ng-options="seller.name for seller in product.sellers" />
+          </div>
+          <div class="col-lg-3"></div>
+          <div class="col-lg-3">
+            <button class="btn btn-primary" ng-click="addToCart(product)">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+      <!-- /.card -->
+    </div>
+    <!-- /.col-lg-9 -->
+  </div>
+</div>
+<!-- /.container -->
